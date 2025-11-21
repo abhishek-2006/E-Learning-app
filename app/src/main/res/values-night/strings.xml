@@ -1,0 +1,132 @@
+<resources>
+
+    <string name="welcome_back">Welcome Back</string>
+    <string name="welcome_to_e_learning_app">Welcome to E-Learning App</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="e_learning_login">E-Learning Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enrollment_number">Enrollment Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="other">Other</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="welcome_faculty">Welcome, Faculty!</string>
+    <string name="welcome_admin">Welcome, Admin!</string>
+    <string name="app_name">Academia</string>
+    <string name="welcome_student">Welcome, Student</string>
+    <string name="logout">Logout</string>
+    <string name="grade_submissions">Grade Submissions</string>
+    <string name="track_progress">Track Progress</string>
+    <string name="announcements">Announcements</string>
+    <string name="upload_video">Upload Video Lecture</string>
+    <string name="upload_lecture_notes">Upload Lecture Notes</string>
+    <string name="assignments_quiz">Assignments / Quiz</string>
+    <string name="administrator">ADMINISTRATOR</string>
+    <string name="system_overview">System Overview</string>
+    <string name="quick_actions">QUICK ACTIONS</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="view_all_accounts">View all accounts</string>
+    <string name="manage_courses">Manage Courses</string>
+    <string name="add_edit_courses">Add/edit courses</string>
+    <string name="broadcast_messages">Broadcast messages</string>
+    <string name="add_faculty">Add Faculty</string>
+    <string name="register_new_teachers">Register new teachers</string>
+    <string name="manage_course_oversight">Manage Course Oversight</string>
+    <string name="monitor_courses_content">Monitor courses &amp; content</string>
+    <string name="manage_student_monitoring">Manage Student Monitoring</string>
+    <string name="track_progress_submissions">Track progress &amp; submissions</string>
+    <string name="complaints_feedback">Complaints &amp; Feedback</string>
+    <string name="address_grievances">Address grievances</string>
+    <string name="generate_reports">Generate Reports</string>
+    <string name="admin_actions">ADMIN ACTIONS</string>
+    <string name="teacher_onboarding">Teacher Onboarding</string>
+    <string name="approve_deny_accounts">Approve/Deny Accounts</string>
+    <string name="course_oversight">Course Oversight</string>
+    <string name="student_monitoring">Student Monitoring</string>
+    <string name="system_wide_activity_reports">System-wide activity reports</string>
+    <string name="my_courses">My Courses</string>
+    <string name="enroll_view">Enroll/View</string>
+    <string name="study_materials">Study Materials</string>
+    <string name="access_download">Access/Download</string>
+    <string name="assignments">Assignments</string>
+    <string name="submit_track">Submit/Track</string>
+    <string name="my_progress">My Progress</string>
+    <string name="view_grades_completion">View/Grades/Completion</string>
+    <string name="my_learning_journey">My Learning Journey</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="institute_admin_panel">Institute Admin Panel</string>
+    <string name="complaints_amp_feedback">Complaints &amp; Feedback</string>
+    <string name="faculty_name">Faculty Name</string>
+    <string name="enter_your_registered_email_below_to_receive_a_password_reset_link">Enter your registered email below to receive a password reset link.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="upload_video_lecture">Upload Video Lecture</string>
+    <string name="video_title">Video Title</string>
+    <string name="video_description">Video Description</string>
+    <string name="select_course">Select Course</string>
+    <string name="choose_video_file">Choose Video File</string>
+    <string name="upload_lecture">Upload Lecture</string>
+    <string name="no_file_chosen">No file chosen</string>
+    <string name="edit_faculty_profile">Edit Faculty Profile</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="update_profile_information">Update your profile information</string>
+    <string name="department">Department</string>
+    <string name="change_password">Change Password</string>
+    <string name="upload_study_material">Upload Study Material\n</string>
+    <string name="material_title">Material Title</string>
+    <string name="material_description">Material Description</string>
+    <string name="choose_file">Choose File</string>
+    <string name="browse">Browse</string>
+    <string name="upload_material">Upload Material</string>
+    <string name="upload_assignment_quiz">Upload Assignment/Quiz</string>
+    <string name="assignment_quiz_title">Assignment/Quiz Title</string>
+    <string name="assignment_quiz_instructions">Instructions/Description</string>
+    <string name="due_date">Due Date</string>
+    <string name="attach_assignment_file">Attach Assignment/Quiz File</string>
+    <string name="upload_assignment">Upload Assignment/Quiz</string>
+    <string name="grade_student_submission">Grade Student Submission</string>
+    <string name="submitted_file">Submitted File</string>
+    <string name="view_download">View / Download</string>
+    <string name="score_grade">Score / Grade</string>
+    <string name="feedback_comments">Feedback / Comments</string>
+    <string name="save_grade">Save Grade</string>
+    <string name="track_student_progress">Track Student Progress</string>
+    <string name="select_course_to_view_progress">Select a course to view student progress</string>
+    <string name="progress_summary">Progress Summary</string>
+    <string name="view_details">View Details</string>
+    <string name="course_completion">Course Completion</string>
+    <string name="avg_assignment_score">Avg. Assignment Score</string>
+    <string name="student_list">Student list</string>
+    <string name="view_students">View Students</string>
+    <string name="view_progress">View Progress</string>
+    <string name="create_announcement">Create Announcement</string>
+    <string name="announcement_title">Announcement Title</string>
+    <string name="announcement_message">Announcement Message</string>
+    <string name="post_announcement">Post Announcement</string>
+    <string name="student_email_com">student@email.com</string>
+    <string name="course_name">Course Name</string>
+    <string name="download">Download</string>
+    <string name="material_name">Material Name</string>
+    <string name="material_type">Material Type</string>
+    <string name="submit">Submit</string>
+    <string name="submitted">Submitted</string>
+    <string name="view_submission">View Submission</string>
+
+    <string-array name="course_subjects">
+        <item>Select a Subject</item>
+        <item>Database Management Systems (DBMS)</item>
+        <item>Data Structures (DS)</item>
+        <item>Mobile App Development (MAD)</item>
+        <item>Java Programming</item>
+        <item>Web Development (WD)</item>
+    </string-array>
+
+</resources>

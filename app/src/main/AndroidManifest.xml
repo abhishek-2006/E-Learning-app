@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E_learning">
+
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".admin.AdminDashboardActivity" />
+        <activity android:name=".admin.AddFacultyActivity" />
+        <activity android:name=".admin.ComplaintFeedbackActivity" />
+        <activity android:name=".admin.CourseOversightActivity" />
+        <activity android:name=".admin.ReportsActivity" />
+        <activity android:name=".admin.StudentMonitoringActivity" />
+        <activity android:name=".faculty.FacultyDashboardActivity" />
+        <activity android:name=".faculty.UploadVideoActivity" />
+        <activity android:name=".faculty.UploadMaterialActivity" />
+        <activity android:name=".faculty.AssignmentsQuizActivity" />
+        <activity android:name=".faculty.GradeSubmissionsActivity" />
+        <activity android:name=".faculty.TrackProgressActivity" />
+        <activity android:name=".faculty.AnnouncementsActivity" />
+        <activity android:name=".faculty.FacultyEditProfileActivity" />
+        <activity android:name=".student.StudentDashboardActivity" />
+        <activity android:name=".student.MyCoursesActivity" />
+        <activity android:name=".student.StudyMaterialsActivity" />
+        <activity android:name=".student.AssignmentsActivity" />
+        <activity android:name=".student.ProgressActivity" />
+        <activity android:name=".student.StudentEditProfileActivity" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

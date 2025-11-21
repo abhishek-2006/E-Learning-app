@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#4A90E2</color>
+
+    <color name="header_gradient_start">#7EC8DE</color>
+    <color name="header_gradient_end">#A1C4FD</color>
+    <color name="background_light_grey">#F0F4F8</color>
+
+    <color name="white_transparent">#B3FFFFFF</color>
+    <color name="text_dark_grey">#333333</color>
+    <color name="text_light_grey">#666666</color>
+
+    <color name="action_icon_green">#4CAF50</color>
+    <color name="action_icon_blue">#2196F3</color>
+    <color name="action_icon_purple">#9C27B0</color>
+
+    <color name="metric_chart_blue">#4A90E2</color>
+    <color name="metric_pie_green">#4CAF50</color>
+
+    <color name="button_green_start">#4CAF50</color>
+    <color name="button_green_end">#8BC34A</color>
+    <color name="button_blue_start">#2196F3</color>
+    <color name="button_blue_end">#03A9F4</color>
+    <color name="button_purple_start">#9C27B0</color>
+    <color name="button_purple_end">#E040FB</color>
+    <color name="button_orange_start">#FF9800</color>
+    <color name="button_orange_end">#FFB74D</color>
+    <color name="button_pink_start">#E91E63</color>
+    <color name="button_pink_end">#FF4081</color>
+
+    <color name="primary_blue">#007AFF</color>
+    <color name="primary_blue_dark">#005BCC</color>
+    <color name="accent_orange">#FF9500</color>
+    <color name="accent_green">#34C759</color>
+    <color name="accent_red">#FF3B30</color>
+    <color name="text_hint_grey">#C7C7CC</color>
+    <color name="hyperlink_blue">#007AFF</color>
+    <color name="card_background_white">#FFFFFF</color>
+    <color name="logout_gradient_start">#F44336</color>
+    <color name="logout_gradient_end">#FF8A65</color>
+
+    <color name="edit_profile_button_start">#FFD54F</color>
+    <color name="edit_profile_button_end">#00BCD4</color>
+
+    <color name="button_secondary_light_bg_start">#FFFFFF</color>
+    <color name="button_secondary_light_bg_end">#EEEEEE</color>
+
+</resources>

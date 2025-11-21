@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8"
+    tools:context=".faculty.FacultyDashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_gradient_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_faculty_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/faculty_name"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_faculty_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#E0F7FA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_edit_profile_bg"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/edit_profile"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/card_rounded_bg"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        app:rowOrderPreserved="false"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_upload_video"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_video_upload"
+            android:text="@string/upload_video"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_upload_material"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_upload_material"
+            android:text="@string/upload_lecture_notes"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_assignments_quiz"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_assignments"
+            android:text="@string/assignments_quiz"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_grade_submissions"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_grades"
+            android:text="@string/grade_submissions"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_track_progress"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_track_progress"
+            android:text="@string/track_progress"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btn_announcements"
+            style="@style/DashboardButton"
+            android:background="@drawable/button_gradient_bg"
+            android:drawableTop="@drawable/ic_announcements"
+            android:text="@string/announcements"
+            app:layout_columnWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_logout_bg"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grid_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
