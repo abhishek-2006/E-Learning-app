@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.app.e_learning'
-    compileSdk 36
+    compileSdk = 36
 
     defaultConfig {
         applicationId "com.app.e_learning"
@@ -44,6 +44,7 @@ dependencies {
     implementation libs.firebase.firestore
     implementation libs.gridlayout
     implementation libs.firebase.storage
+    implementation libs.core.splashscreen
 
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
