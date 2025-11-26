@@ -17,6 +17,7 @@
         <item name="colorPrimary">@color/header_gradient_start</item>
         <item name="colorPrimaryDark">@color/header_gradient_start</item>
         <item name="colorAccent">@color/action_icon_blue</item>
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
     <style name="AdminActionButton">
