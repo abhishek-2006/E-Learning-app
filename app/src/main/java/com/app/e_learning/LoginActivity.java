@@ -3,7 +3,6 @@ package com.app.e_learning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.app.e_learning.admin.AdminDashboardActivity;
 import com.app.e_learning.faculty.FacultyDashboardActivity;
 import com.app.e_learning.student.StudentDashboardActivity;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText etEmail, etPassword;
+    private TextInputEditText etEmail, etPassword;
     private Button btnLogin;
     private TextView tvSignup;
     private FirebaseAuth auth;
@@ -32,8 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        etEmail = findViewById(R.id.etEmail);
-        etPassword = findViewById(R.id.etPassword);
+        etEmail = findViewById(R.id.et_email_input);
+        etPassword = findViewById(R.id.et_password_input);
         btnLogin = findViewById(R.id.btnLogin);
         tvSignup = findViewById(R.id.tvSignup);
         TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);

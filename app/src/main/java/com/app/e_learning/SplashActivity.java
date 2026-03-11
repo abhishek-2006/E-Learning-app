@@ -1,8 +1,7 @@
 package com.app.e_learning;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
+import android.os.*;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SplashActivity extends AppCompatActivity {
 
-    Handler handler = new Handler();
+    Handler handler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

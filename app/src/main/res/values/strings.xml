@@ -133,6 +133,7 @@
     <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
     <string name="Browse">Browse</string>
     <string name="login_image">Login Image</string>
+    <string name="splash_image">Splash Image</string>
 
     <string-array name="report_types">
         <item>Student Grades Report</item>
