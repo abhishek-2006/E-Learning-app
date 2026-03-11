@@ -119,6 +119,7 @@
     <string name="submit">Submit</string>
     <string name="submitted">Submitted</string>
     <string name="view_submission">View Submission</string>
+    <string name="no_courses_enrolled_yet">No courses enrolled yet.</string>
 
     <string-array name="course_subjects">
         <item>Select a Subject</item>
