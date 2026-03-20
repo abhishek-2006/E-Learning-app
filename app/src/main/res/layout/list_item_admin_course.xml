@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="2dp">
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/light_gray"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,63 +15,39 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Course Name -->
         <TextView
             android:id="@+id/tv_course_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/course_name"
             android:textColor="@color/text_dark_grey"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Database Management Systems (DBMS)" />
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_course_code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/text_light_grey"
-            android:textSize="14sp"
-            tools:text="Course Code: CS101" />
-
+        <!-- Faculty -->
         <TextView
             android:id="@+id/tv_faculty_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:text="Faculty Name"
             android:textColor="@color/text_light_grey"
-            android:textSize="14sp"
-            tools:text="Faculty: Prof. S. Sharma" />
+            android:textSize="14sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- Course Code Badge -->
+        <TextView
+            android:id="@+id/tv_course_code"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_course_code"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="CS101"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <Button
-                android:id="@+id/btn_view_details"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/button_blue_start"
-                android:minHeight="0dp"
-                android:paddingVertical="10dp"
-                android:text="@string/view_details"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/btn_manage_faculty"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/button_orange_end"
-                android:minHeight="0dp"
-                android:paddingVertical="10dp"
-                android:text="@string/manage_faculty"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-        </LinearLayout>
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+
+</com.google.android.material.card.MaterialCardView>

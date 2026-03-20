@@ -48,4 +48,6 @@
     <color name="button_secondary_light_bg_start">#FFFFFF</color>
     <color name="button_secondary_light_bg_end">#EEEEEE</color>
 
+    <color name="light_gray">#E0E0E0</color>
+
 </resources>

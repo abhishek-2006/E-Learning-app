@@ -135,6 +135,8 @@
     <string name="login_image">Login Image</string>
     <string name="splash_image">Splash Image</string>
     <string name="no_courses_enrolled_yet">No courses enrolled yet.</string>
+    <string name="course_code">Course code</string>
+    <string name="no_courses_yet">No courses yet</string>
 
     <string-array name="report_types">
         <item>Student Grades Report</item>
