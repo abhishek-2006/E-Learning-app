@@ -1,5 +1,6 @@
 package com.app.e_learning.admin;
 
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.ListenerRegistration;
@@ -10,6 +11,7 @@ import java.util.List;
 public class CourseRepository {
 
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private final CollectionReference coursesRef = db.collection("courses");
 
     // Add Course
     public void addCourse(Course course, OnCompleteListener listener) {
@@ -22,24 +24,21 @@ public class CourseRepository {
 
     // Update Course
     public void updateCourse(Course course, OnCompleteListener listener) {
-        db.collection("courses")
-                .document(course.getId())
-                .update(course.toMap())
-                .addOnSuccessListener(unused ->
-                        listener.onSuccess("Course updated"))
+        if (course.getId() == null) return;
+
+        coursesRef.document(course.getId())
+                .update(course.toMap()) // Uses the toMap() you created!
+                .addOnSuccessListener(aVoid -> listener.onSuccess("Course Updated"))
                 .addOnFailureListener(listener::onFailure);
     }
 
     // Delete Course
     public void deleteCourse(String courseId, OnCompleteListener listener) {
-        db.collection("courses")
-                .document(courseId)
+        coursesRef.document(courseId)
                 .delete()
-                .addOnSuccessListener(unused ->
-                        listener.onSuccess("Course deleted"))
+                .addOnSuccessListener(aVoid -> listener.onSuccess("Course Deleted"))
                 .addOnFailureListener(listener::onFailure);
     }
-
     // Real-time listener
     public ListenerRegistration listenForCourses(CourseDataListener listener) {
         return db.collection("courses")

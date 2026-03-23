@@ -122,6 +122,11 @@
     <string name="no_courses_enrolled_yet">No courses enrolled yet.</string>
     <string name="course_code">Course code</string>
     <string name="no_courses_yet">No courses yet</string>
+    <string name="faculty_icon">faculty_icon</string>
+    <string name="course_icon">course_icon</string>
+    <string name="course_code_icon">Course code icon</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="delete_course">Delete Course</string>
 
     <string-array name="course_subjects">
         <item>Select a Subject</item>

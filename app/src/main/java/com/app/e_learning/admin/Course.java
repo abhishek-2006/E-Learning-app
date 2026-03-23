@@ -23,15 +23,12 @@ public class Course {
     public String getId() {
         return id;
     }
-
     public String getFacultyName() {
         return facultyName;
     }
-
     public String getCourseName() {
         return courseName;
     }
-
     public String getCourseCode() {
         return courseCode;
     }
@@ -39,6 +36,19 @@ public class Course {
     public void setId(String id) {
         this.id = id;
     }
+
+    public void setFacultyName(String facultyName) {
+        this.facultyName = facultyName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
 
     // Helper method to convert to a Firestore-friendly Map
     public Map<String, Object> toMap() {

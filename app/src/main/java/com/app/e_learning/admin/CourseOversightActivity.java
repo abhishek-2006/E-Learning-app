@@ -72,7 +72,7 @@ public class CourseOversightActivity extends AppCompatActivity
         EditText etCode = view.findViewById(R.id.et_course_code);
 
         new AlertDialog.Builder(this)
-                .setTitle("Add Course")
+                .setTitle("Add New Course")
                 .setView(view)
                 .setPositiveButton("Add", (dialog, which) -> {
 
@@ -81,7 +81,7 @@ public class CourseOversightActivity extends AppCompatActivity
                     String code = etCode.getText().toString().trim();
 
                     if (faculty.isEmpty() || course.isEmpty() || code.isEmpty()) {
-                        Toast.makeText(this, "All fields required", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -90,7 +90,7 @@ public class CourseOversightActivity extends AppCompatActivity
                     repository.addCourse(newCourse, new CourseRepository.OnCompleteListener() {
                         @Override
                         public void onSuccess(String message) {
-                            Toast.makeText(CourseOversightActivity.this, message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CourseOversightActivity.this, "Course Added Successfully", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
@@ -122,20 +122,22 @@ public class CourseOversightActivity extends AppCompatActivity
                 .setTitle("Edit Course")
                 .setView(view)
                 .setPositiveButton("Update", (dialog, which) -> {
+                    String faculty = etFaculty.getText().toString().trim();
+                    String courseName = etCourse.getText().toString().trim();
+                    String code = etCode.getText().toString().trim();
 
-                    String id = course.getId();
+                    if (faculty.isEmpty() || courseName.isEmpty() || code.isEmpty()) {
+                        Toast.makeText(this, "Fields cannot be empty", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
-                    Course updatedCourse = new Course(
-                            etFaculty.getText().toString(),
-                            etCourse.getText().toString(),
-                            etCode.getText().toString()
-                    );
-                    updatedCourse.setId(id);
+                    Course updatedCourse = new Course(faculty, courseName, code);
+                    updatedCourse.setId(course.getId());
 
                     repository.updateCourse(course, new CourseRepository.OnCompleteListener() {
                         @Override
                         public void onSuccess(String message) {
-                            Toast.makeText(CourseOversightActivity.this, message, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CourseOversightActivity.this, "Course Updated Successfully", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override

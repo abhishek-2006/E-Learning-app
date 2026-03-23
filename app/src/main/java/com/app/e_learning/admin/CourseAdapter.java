@@ -3,6 +3,7 @@ package com.app.e_learning.admin;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,10 +26,20 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
     @Override
     public void onBindViewHolder(@NonNull CourseViewHolder holder, int position) {
         Course course = courseList.get(position);
-
         holder.tvCourseName.setText(course.getCourseName());
         holder.tvFacultyName.setText(course.getFacultyName());
         holder.tvCourseCode.setText(course.getCourseCode());
+
+        // Handle Edit Click
+        holder.btnEdit.setOnClickListener(v -> {
+            if (listener != null) listener.onEdit(course);
+        });
+
+        // Handle Delete Click
+        holder.btnDelete.setOnClickListener(v -> {
+            if (listener != null) listener.onDelete(course);
+        });
+
     }
 
     @NonNull
@@ -53,6 +64,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
     static class CourseViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvCourseName, tvFacultyName, tvCourseCode;
+        ImageButton btnEdit, btnDelete;
 
         public CourseViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,6 +72,8 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
             tvCourseName = itemView.findViewById(R.id.tv_course_name);
             tvFacultyName = itemView.findViewById(R.id.tv_faculty_name);
             tvCourseCode = itemView.findViewById(R.id.tv_course_code);
+            btnEdit = itemView.findViewById(R.id.ib_edit);
+            btnDelete = itemView.findViewById(R.id.ib_delete);
         }
     }
 }
