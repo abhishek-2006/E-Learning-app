@@ -167,22 +167,18 @@ public class CourseOversightActivity extends AppCompatActivity
         new AlertDialog.Builder(this)
                 .setTitle("Delete Course")
                 .setMessage("Are you sure?")
-                .setPositiveButton("Delete", (d, w) -> {
+                .setPositiveButton("Delete", (d, w) -> repository.deleteCourse(course.getId(),
+                        new CourseRepository.OnCompleteListener() {
+                            @Override
+                            public void onSuccess(String message) {
+                                Toast.makeText(CourseOversightActivity.this, message, Toast.LENGTH_SHORT).show();
+                            }
 
-                    repository.deleteCourse(course.getId(),
-                            new CourseRepository.OnCompleteListener() {
-                                @Override
-                                public void onSuccess(String message) {
-                                    Toast.makeText(CourseOversightActivity.this, message, Toast.LENGTH_SHORT).show();
-                                }
-
-                                @Override
-                                public void onFailure(Exception e) {
-                                    Toast.makeText(CourseOversightActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                                }
-                            });
-
-                })
+                            @Override
+                            public void onFailure(Exception e) {
+                                Toast.makeText(CourseOversightActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        }))
                 .setNegativeButton("Cancel", null)
                 .show();
     }

@@ -127,6 +127,7 @@
     <string name="course_code_icon">Course code icon</string>
     <string name="edit_course">Edit Course</string>
     <string name="delete_course">Delete Course</string>
+    <string name="no_complaints_or_feedback_yet">No complaints or feedback yet.</string>
 
     <string-array name="course_subjects">
         <item>Select a Subject</item>
