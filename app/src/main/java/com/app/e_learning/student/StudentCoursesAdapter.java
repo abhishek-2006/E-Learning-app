@@ -37,6 +37,7 @@ public class StudentCoursesAdapter extends RecyclerView.Adapter<StudentCoursesAd
 
         holder.courseName.setText(course.getCourseName());
         holder.facultyName.setText("Faculty: " + course.getFacultyName());
+        holder.courseCode.setText("Course Code: " + course.getCourseCode());
     }
 
     @Override
@@ -46,13 +47,14 @@ public class StudentCoursesAdapter extends RecyclerView.Adapter<StudentCoursesAd
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView courseName, facultyName;
+        TextView courseName, facultyName, courseCode;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             courseName = itemView.findViewById(R.id.tv_course_name);
             facultyName = itemView.findViewById(R.id.tv_faculty_name);
+            courseCode = itemView.findViewById(R.id.tv_course_code);
         }
     }
 }

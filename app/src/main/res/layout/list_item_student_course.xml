@@ -24,13 +24,22 @@
             tools:text="Database Management Systems (DBMS)" />
 
         <TextView
+            android:id="@+id/tv_course_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_light_grey"
+            android:textSize="14sp"
+            tools:text="Course Code: CS101" />
+
+        <TextView
             android:id="@+id/tv_faculty_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="6dp"
             android:textColor="@color/text_light_grey"
             android:textSize="14sp"
-            tools:text="Faculty: Professor S. Sharma" />
+            tools:text="Faculty: Professor A. Shah" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

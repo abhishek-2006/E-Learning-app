@@ -48,49 +48,44 @@ public class MyCoursesActivity extends AppCompatActivity {
 
     private void loadCourses() {
 
-        assert auth.getCurrentUser() != null;
-        String studentId = auth.getCurrentUser().getUid();
+        String uid = auth.getUid();
+        if (uid == null) return;
 
-        db.collection("students")
-                .document(studentId)
-                .get()
-                .addOnSuccessListener(studentDoc -> {
+        db.collection("student").document(uid).get().addOnSuccessListener(studentDoc -> {
 
-                    if (!studentDoc.exists()) {
-                        showEmpty();
-                        return;
-                    }
+            if (!studentDoc.exists()) {
+                showEmpty();
+                return;
+            }
 
-                    String enrollmentId = studentDoc.getString("enrollment");
+            String enrollmentId = studentDoc.getString("enrollment");
 
-                    if (enrollmentId == null || enrollmentId.isEmpty()) {
-                        showEmpty();
-                        return;
-                    }
+            if (enrollmentId == null || enrollmentId.isEmpty()) {
+                showEmpty();
+                return;
+            }
 
-                    db.collection("enrollments")
-                            .document(enrollmentId)
-                            .get()
-                            .addOnSuccessListener(enrollmentDoc -> {
+            db.collection("enrollments").document(enrollmentId).get().addOnSuccessListener(enrollmentDoc -> {
 
-                                if (!enrollmentDoc.exists()) {
-                                    showEmpty();
-                                    return;
-                                }
+                if (!enrollmentDoc.exists()) {
+                    showEmpty();
+                    return;
+                }
 
-                                courseList.clear();
+                courseList.clear();
 
-                                String courseName = enrollmentDoc.getString("courseName");
-                                String facultyName = enrollmentDoc.getString("facultyName");
+                String courseName = enrollmentDoc.getString("courseName");
+                String facultyName = enrollmentDoc.getString("facultyName");
+                String courseCode = enrollmentDoc.getString("courseCode");
 
-                                courseList.add(new CourseModel(courseName, facultyName));
+                courseList.add(new CourseModel(courseName, facultyName, courseCode));
 
-                                adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
 
-                                rvCourses.setVisibility(View.VISIBLE);
-                                tvEmpty.setVisibility(View.GONE);
-                            });
-                });
+                rvCourses.setVisibility(View.VISIBLE);
+                tvEmpty.setVisibility(View.GONE);
+            });
+        });
     }
 
     private void showEmpty() {
