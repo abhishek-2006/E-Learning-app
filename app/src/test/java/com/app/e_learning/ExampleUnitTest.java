@@ -1,4 +1,4 @@
-package com.app.e_learning;
+package com.abhishek.e_learning;
 
 import static org.junit.Assert.assertEquals;
 

@@ -7,20 +7,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:626475752933:android:a85c5055556f40a208a30c",
+        "mobilesdk_app_id": "1:626475752933:android:d25e12935cb388f508a30c",
         "android_client_info": {
-          "package_name": "com.app.e_learning"
+          "package_name": "com.abhishek.e_learning"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "626475752933-k496jt70rqq0qn6mdp6ij01f3m69g1f3.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.app.e_learning",
-            "certificate_hash": "57ec3c11bbcf47465635bfb36cb8429069b265ac"
-          }
-        },
         {
           "client_id": "626475752933-jamnrm41087o21h88clf9m8r41bimlua.apps.googleusercontent.com",
           "client_type": 3
